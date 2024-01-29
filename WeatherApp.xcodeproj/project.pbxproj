@@ -13,6 +13,8 @@
 		D0C0C5212B6676B700CFB012 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C0C51F2B6676B700CFB012 /* Main.storyboard */; };
 		D0C0C5232B6676B800CFB012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0C0C5222B6676B800CFB012 /* Assets.xcassets */; };
 		D0C0C5262B6676B800CFB012 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C0C5242B6676B800CFB012 /* LaunchScreen.storyboard */; };
+		D0C0C52E2B66787C00CFB012 /* bugun-hava-durumu-nasil-olacak-199041-5 kopyası.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0C0C52D2B66787C00CFB012 /* bugun-hava-durumu-nasil-olacak-199041-5 kopyası.jpg */; };
+		D0C0C5302B668E6300CFB012 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C0C52F2B668E6300CFB012 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		D0C0C5222B6676B800CFB012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0C0C5252B6676B800CFB012 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0C0C5272B6676B800CFB012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0C0C52D2B66787C00CFB012 /* bugun-hava-durumu-nasil-olacak-199041-5 kopyası.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "bugun-hava-durumu-nasil-olacak-199041-5 kopyası.jpg"; path = "../../../bugun-hava-durumu-nasil-olacak-199041-5 kopyası.jpg"; sourceTree = "<group>"; };
+		D0C0C52F2B668E6300CFB012 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				D0C0C5222B6676B800CFB012 /* Assets.xcassets */,
 				D0C0C5242B6676B800CFB012 /* LaunchScreen.storyboard */,
 				D0C0C5272B6676B800CFB012 /* Info.plist */,
+				D0C0C52D2B66787C00CFB012 /* bugun-hava-durumu-nasil-olacak-199041-5 kopyası.jpg */,
+				D0C0C52F2B668E6300CFB012 /* DetailViewController.swift */,
 			);
 			path = WeatherApp;
 			sourceTree = "<group>";
@@ -127,6 +133,7 @@
 			files = (
 				D0C0C5262B6676B800CFB012 /* LaunchScreen.storyboard in Resources */,
 				D0C0C5232B6676B800CFB012 /* Assets.xcassets in Resources */,
+				D0C0C52E2B66787C00CFB012 /* bugun-hava-durumu-nasil-olacak-199041-5 kopyası.jpg in Resources */,
 				D0C0C5212B6676B700CFB012 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +148,7 @@
 				D0C0C51E2B6676B700CFB012 /* ViewController.swift in Sources */,
 				D0C0C51A2B6676B700CFB012 /* AppDelegate.swift in Sources */,
 				D0C0C51C2B6676B700CFB012 /* SceneDelegate.swift in Sources */,
+				D0C0C5302B668E6300CFB012 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

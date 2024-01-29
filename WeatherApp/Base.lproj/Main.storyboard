@@ -1,24 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kaM-d3-8Kp">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bugun-hava-durumu-nasil-olacak-199041-5 kopyası.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6fO-fn-NMe">
+                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="HAVA DURUMU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c12-tQ-M0z">
+                                <rect key="frame" x="0.0" y="103" width="393" height="59"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hava Durumu Icin Sehri Giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZSs-5S-ldg">
+                                <rect key="frame" x="20" y="362" width="353" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="s5D-Be-wpI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLy-ye-aID">
+                                <rect key="frame" x="20" y="444" width="353" height="35"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4gA-YZ-euE"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="TIKLA"/>
+                                <connections>
+                                    <action selector="btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Ll-YS-ll3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Hava Durumu Icin IL Seciniz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vob-h7-b9j">
+                                <rect key="frame" x="0.0" y="230" width="393" height="95"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" systemColor="tableCellBlueTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LLy-ye-aID" firstAttribute="top" secondItem="ZSs-5S-ldg" secondAttribute="bottom" constant="20" id="0gH-AJ-XC4"/>
+                            <constraint firstAttribute="bottom" secondItem="6fO-fn-NMe" secondAttribute="bottom" id="2Nx-km-3xU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZSs-5S-ldg" secondAttribute="trailing" constant="20" id="4Nd-5i-L91"/>
+                            <constraint firstItem="6fO-fn-NMe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="G6L-dV-cM3"/>
+                            <constraint firstItem="ZSs-5S-ldg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OZz-2H-zhA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LLy-ye-aID" secondAttribute="trailing" constant="20" id="Rry-cH-Ij7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6fO-fn-NMe" secondAttribute="trailing" id="WQ2-zv-V9V"/>
+                            <constraint firstItem="vob-h7-b9j" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="20" id="WW0-Ae-sZ3"/>
+                            <constraint firstItem="vob-h7-b9j" firstAttribute="top" secondItem="c12-tQ-M0z" secondAttribute="bottom" constant="100" id="ZpP-Pu-V76"/>
+                            <constraint firstItem="LLy-ye-aID" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="a8t-VC-QNw"/>
+                            <constraint firstItem="ZSs-5S-ldg" firstAttribute="top" secondItem="vob-h7-b9j" secondAttribute="bottom" constant="10" id="gRO-VB-nFB"/>
+                            <constraint firstItem="vob-h7-b9j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iuY-2t-snh"/>
+                            <constraint firstItem="6fO-fn-NMe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wvg-k1-mIP"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="WlB-lK-atQ"/>
+                    <connections>
+                        <outlet property="btn" destination="LLy-ye-aID" id="Z0t-45-NiK"/>
+                        <outlet property="textField" destination="ZSs-5S-ldg" id="InJ-NS-0oh"/>
+                        <segue destination="xDw-xt-tQl" kind="show" id="18f-RU-blt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="904.58015267175574" y="3.5211267605633805"/>
+        </scene>
+        <!--HAVA DURUMU-->
+        <scene sceneID="xWc-XW-FvJ">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="xDw-xt-tQl" customClass="DetailViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sMm-xc-pjC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bugun-hava-durumu-nasil-olacak-199041-5 kopyası.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Hxy-cd-Fbm">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUZ-NM-QiI">
+                                <rect key="frame" x="20" y="143" width="353" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LzH-TU-R7D">
+                                <rect key="frame" x="20" y="223" width="353" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <color key="textColor" systemColor="systemMintColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UOB-iH-UZQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YUZ-NM-QiI" firstAttribute="leading" secondItem="UOB-iH-UZQ" secondAttribute="leading" constant="20" id="2wY-Rk-yWM"/>
+                            <constraint firstItem="LzH-TU-R7D" firstAttribute="top" secondItem="YUZ-NM-QiI" secondAttribute="bottom" constant="20" id="88q-yS-Tm3"/>
+                            <constraint firstItem="Hxy-cd-Fbm" firstAttribute="leading" secondItem="UOB-iH-UZQ" secondAttribute="leading" id="J4X-nU-33Q"/>
+                            <constraint firstItem="LzH-TU-R7D" firstAttribute="leading" secondItem="UOB-iH-UZQ" secondAttribute="leading" constant="20" id="KAr-UP-8m7"/>
+                            <constraint firstItem="UOB-iH-UZQ" firstAttribute="trailing" secondItem="LzH-TU-R7D" secondAttribute="trailing" constant="20" id="LDK-Kc-sk1"/>
+                            <constraint firstItem="UOB-iH-UZQ" firstAttribute="trailing" secondItem="YUZ-NM-QiI" secondAttribute="trailing" constant="20" id="NRk-Jg-zix"/>
+                            <constraint firstItem="UOB-iH-UZQ" firstAttribute="bottom" secondItem="Hxy-cd-Fbm" secondAttribute="bottom" id="PUb-bh-zGQ"/>
+                            <constraint firstItem="UOB-iH-UZQ" firstAttribute="trailing" secondItem="Hxy-cd-Fbm" secondAttribute="trailing" id="YtX-TZ-iP6"/>
+                            <constraint firstItem="Hxy-cd-Fbm" firstAttribute="top" secondItem="UOB-iH-UZQ" secondAttribute="top" id="pn9-tn-uCs"/>
+                            <constraint firstItem="YUZ-NM-QiI" firstAttribute="top" secondItem="UOB-iH-UZQ" secondAttribute="top" constant="40" id="yRB-Lb-hKu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="HAVA DURUMU" id="Brn-FR-DP2"/>
+                    <connections>
+                        <outlet property="cityName" destination="YUZ-NM-QiI" id="RR4-8m-SaU"/>
+                        <outlet property="weather" destination="LzH-TU-R7D" id="rnT-l5-sQQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eKg-JM-SFG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1694" y="4"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DFP-U1-JMc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kaM-d3-8Kp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GMW-j7-VY5">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="barTintColor" systemColor="systemCyanColor"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" name="AccentColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="NM7-zR-dg1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nw7-cv-RBa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-22.137404580152669" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bugun-hava-durumu-nasil-olacak-199041-5 kopyası.jpg" width="465" height="258"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tableCellBlueTextColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
